@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "TikTok Shop Manager - Seller Analytics & Optimizer",
+  "description": "AI-powered seller tools for TikTok Shop. Track products, monitor competitors, detect trends, and optimize pricing to maximize sales.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://seller-us.tiktok.com/*",
+    "https://seller.tiktok.com/*",
+    "https://www.tiktok.com/*",
+    "https://shop.tiktok.com/*",
+    "https://affiliate.tiktok.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://seller-us.tiktok.com/*",
+        "https://seller.tiktok.com/*",
+        "https://www.tiktok.com/*",
+        "https://shop.tiktok.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
