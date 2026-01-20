@@ -68,6 +68,43 @@ This document explains why each permission is required and how it's used.
 
 ---
 
+### 4. `alarms`
+
+**Purpose:** Schedule periodic background tasks
+
+**What It Does:**
+- Creates a recurring alarm to check price alerts
+- Runs once per hour (minimal resource usage)
+
+**Why Needed:**
+- Check if any tracked products hit price alert thresholds
+- Notify user of price drops/increases they're watching
+
+**What It DOESN'T Do:**
+- Doesn't wake device from sleep unnecessarily
+- Doesn't run continuously (only hourly checks)
+
+---
+
+### 5. `notifications`
+
+**Purpose:** Show desktop notifications for price alerts
+
+**What It Does:**
+- Displays native Chrome notification when price target is hit
+- Only triggers for user-set price alerts
+
+**Why Needed:**
+- Alert users when products reach their target price
+- Timely notifications help users catch deals
+
+**What It DOESN'T Do:**
+- No promotional/marketing notifications
+- Only user-initiated alerts trigger notifications
+- Users can disable in Settings
+
+---
+
 ## Host Permissions
 
 ### TikTok Shop Domains
@@ -138,7 +175,6 @@ User Action                    Data Flow
 | `webRequest` | Don't need to intercept requests |
 | `cookies` | Don't access TikTok session |
 | `geolocation` | Location not needed |
-| `notifications` | Using Chrome's native alerts instead |
 
 ---
 
@@ -160,6 +196,8 @@ User Action                    Data Flow
 | `storage` | Essential | Persistent data without accounts |
 | `activeTab` | Essential | Context-aware UI |
 | `tabs` | Essential | Tab URL detection |
+| `alarms` | Essential | Background price alert checks |
+| `notifications` | Essential | Price drop/increase alerts |
 | Host permissions | Essential | Product/seller tracking |
 
 All permissions are the minimum required to provide core functionality. We follow the principle of least privilege and request no unnecessary access.
