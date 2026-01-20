@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate-icons": "node scripts/generate-icons.js"
+    "generate-icons": "node scripts/generate-icons.js",
+    "generate-store-assets": "node scripts/generate-store-assets.js",
+    "postbuild": "cp public/manifest.json dist/ && cp -r public/icons dist/ && mkdir -p dist/popup && echo '<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>TikTok Shop Manager</title><script type=\"module\" src=\"../popup.js\"></script><link rel=\"stylesheet\" href=\"../popup.css\"></head><body><div id=\"root\"></div></body></html>' > dist/popup/index.html && rm -rf dist/src"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - TikTok Shop Manager</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f8f9fa;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      background: linear-gradient(90deg, #25F4EE, #FE2C55);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .updated {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #1a1a1a;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #25F4EE;
+    }
+    h3 {
+      color: #333;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul, ol {
+      margin-bottom: 15px;
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight {
+      background: linear-gradient(90deg, rgba(37,244,238,0.1), rgba(254,44,85,0.1));
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin-bottom: 0;
+    }
+    .highlight li:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      color: #FE2C55;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .summary {
+      background: #1a1a1a;
+      color: white;
+      padding: 25px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    .summary h2 {
+      color: white;
+      border-bottom-color: #FE2C55;
+    }
+    .summary ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .summary li {
+      padding-left: 25px;
+      position: relative;
+    }
+    .summary li::before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #25F4EE, #FE2C55);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-icon">🛍️</div>
+      <div>
+        <h1>Privacy Policy</h1>
+        <p class="updated">TikTok Shop Manager · Last Updated: January 2026</p>
+      </div>
+    </div>
+
+    <h2>Overview</h2>
+    <p>TikTok Shop Manager is a Chrome browser extension designed to help TikTok Shop sellers track products, monitor competitors, and optimize pricing. This privacy policy explains what data we collect and how we handle it.</p>
+
+    <h2>Data Collection</h2>
+
+    <h3>What We Store Locally</h3>
+    <p>All data is stored locally on your device using Chrome's <code>chrome.storage.local</code> API:</p>
+    <ol>
+      <li><strong>OpenAI API Key</strong> - Your personal API key for AI features (stored securely, never transmitted to our servers)</li>
+      <li><strong>Tracked Products</strong> - Product names, prices, sales data, and URLs you choose to track</li>
+      <li><strong>Competitor Data</strong> - Shop names and URLs you add for monitoring</li>
+      <li><strong>Trend Analysis History</strong> - Keywords you've analyzed and results</li>
+      <li><strong>Usage Counter</strong> - Number of AI analyses used (for free tier tracking)</li>
+      <li><strong>Settings</strong> - Your preferences (notifications, auto-track, etc.)</li>
+    </ol>
+
+    <h3>What We DON'T Collect</h3>
+    <div class="highlight">
+      <ul>
+        <li>Personal information (name, email, address)</li>
+        <li>TikTok account credentials</li>
+        <li>Browsing history outside TikTok Shop</li>
+        <li>Payment information</li>
+        <li>Analytics or telemetry data</li>
+        <li>Crash reports</li>
+      </ul>
+    </div>
+
+    <h2>Third-Party Services</h2>
+
+    <h3>OpenAI API</h3>
+    <p>When you use AI-powered features (trend analysis, price optimization), your queries are sent directly to OpenAI's API using YOUR API key. This data is subject to <a href="https://openai.com/privacy/" target="_blank">OpenAI's Privacy Policy</a>.</p>
+
+    <p><strong>What's sent to OpenAI:</strong></p>
+    <ul>
+      <li>Product descriptions and names</li>
+      <li>Competitor price data (anonymized)</li>
+      <li>Analysis queries</li>
+    </ul>
+
+    <p><strong>What's NOT sent to OpenAI:</strong></p>
+    <ul>
+      <li>Your personal information</li>
+      <li>TikTok account details</li>
+      <li>Complete browsing history</li>
+    </ul>
+
+    <h2>Data Storage & Security</h2>
+    <ul>
+      <li><strong>Local Only:</strong> All data remains on your device</li>
+      <li><strong>No Cloud Sync:</strong> Data is not synced across devices</li>
+      <li><strong>No Servers:</strong> We don't operate any backend servers</li>
+      <li><strong>Encryption:</strong> All communications use HTTPS</li>
+      <li><strong>No Analytics:</strong> We don't track how you use the extension</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>You can at any time:</p>
+    <ul>
+      <li><strong>View your data:</strong> All stored in Chrome's extension storage</li>
+      <li><strong>Delete your data:</strong> Use "Clear All Data" in Settings</li>
+      <li><strong>Remove API key:</strong> Delete from Settings anytime</li>
+      <li><strong>Uninstall:</strong> Removes all extension data</li>
+    </ul>
+
+    <h2>Host Permissions</h2>
+    <p>The extension requests access to TikTok Shop domains:</p>
+    <ul>
+      <li><code>seller-us.tiktok.com</code></li>
+      <li><code>seller.tiktok.com</code></li>
+      <li><code>shop.tiktok.com</code></li>
+      <li><code>www.tiktok.com</code></li>
+    </ul>
+
+    <p>This access is used ONLY to display the floating action button and extract product/seller data when you click "Track".</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This extension is not intended for users under 13 years of age. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy as needed. Significant changes will be noted in the extension's changelog.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or concerns:</p>
+    <ul>
+      <li>GitHub Issues: <a href="https://github.com/theluckystrike/tiktok-shop-manager/issues" target="_blank">github.com/theluckystrike/tiktok-shop-manager</a></li>
+    </ul>
+
+    <div class="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li>All data stored locally on your device</li>
+        <li>No personal information collected</li>
+        <li>No tracking or analytics</li>
+        <li>No backend servers</li>
+        <li>You control and can delete all data</li>
+        <li>OpenAI integration uses YOUR key directly</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
